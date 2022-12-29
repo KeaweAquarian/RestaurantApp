@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".FoodListActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/customListView"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#302F2F"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="#EAEAEA"
+            android:backgroundTint="#302F2F"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:text="Total: $ "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/total"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:background="#302F2F"
+            android:textColor="@color/white"
+            android:text="0.0"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="#302F2F">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:background="#302F2F"
+                />
+
+        <Button
+            android:id="@+id/seeCart"
+            android:layout_margin="0dp"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#C3C1C1"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="See Cart"
+            tools:ignore="TouchTargetSizeCheck" />
+
+</FrameLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
